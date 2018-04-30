@@ -20,3 +20,5 @@ Route::get('/about',function(){
 Route::get('/services',function(){
 	return view('pages.services');
 });
+
+Route::resource('posts','PostsController');

@@ -1,4 +1,12 @@
  @extends('layouts.app')
  @section('content')
-<h1>Index page</h1>
+@if(count($posts)>0)
+
+@foreach($posts as $post)
+<h2>{{$post->title}}</h2>
+<p>{{$post->body}}</p>
+
+<hr>
+@endforeach
+@endif
  @endsection
