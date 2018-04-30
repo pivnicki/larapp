@@ -13,7 +13,21 @@ class PagesController extends Controller
      */
     public function index()
     {
-        return view('pages.index');
+        
+        $title="Home Page";
+        return view('pages.index')->with('title',$title);
+    }
+
+    public function about()
+    {
+        $title="About Page";
+        return view('pages.about')->with('title',$title);
+    }
+
+    public function services()
+    {
+        $title="Services Page";
+        return view('pages.services')->with('title',$title);
     }
 
     /**
