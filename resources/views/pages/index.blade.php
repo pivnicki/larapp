@@ -4,7 +4,7 @@
 
 @foreach($posts as $post)
 <h2>{{$post->title}}</h2>
-<p>{{$post->body}}</p>
+<p>{{Str::words($post->body,10)}}</p>
 
 <hr>
 @endforeach
