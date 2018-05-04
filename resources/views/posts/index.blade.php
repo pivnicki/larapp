@@ -5,7 +5,7 @@
 @foreach($posts as $post)
 <h2> <a href="/posts/{{$post->id}}">{{$post->title}}</a></h2>
  <small><b>Created at:</b> {{$post->created_at}}</small>
-<p>{{Str::words($post->body,10)}}</p>
+<p>{!!Str::words($post->body,5)!!}</p>
 <hr>
 
 @endforeach
