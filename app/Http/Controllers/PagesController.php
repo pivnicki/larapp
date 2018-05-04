@@ -14,7 +14,7 @@ class PagesController extends Controller
     public function index()
     {
         
-        $posts= Post::all();
+        $posts= Post::orderBy('title','desc')->get();
 
         return view('pages.index')->with('posts',$posts);
     }

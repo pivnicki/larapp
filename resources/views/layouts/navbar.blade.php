@@ -9,11 +9,19 @@
         <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="/blog">Blog</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="/about">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/services">Services</a>
-      </li>    
+      </li>   
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a class="nav-link" href="/posts/create">Create post</a>
+      </li> 
     </ul>
   </div>  
 </nav>

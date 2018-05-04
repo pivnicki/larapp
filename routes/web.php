@@ -22,3 +22,6 @@ Route::get('/services',function(){
 });
 
 Route::resource('posts','PostsController');
+
+Route::get('/blog','PostsController@index');
+Route::get('/posts/create','PostsController@create');
