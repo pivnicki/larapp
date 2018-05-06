@@ -3,10 +3,8 @@
 @if(count($posts)>0)
 
 @foreach($posts as $post)
-<h2>{{$post->title}}</h2>
-<p>{{Str::words($post->body,10)}}</p>
-
-<hr>
+<h2><a href="/posts/{{$post->id}}">{{$post->title}}</a></h2>
+ <hr>
 @endforeach
 @endif
  @endsection
