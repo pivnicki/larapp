@@ -26,7 +26,7 @@ Route::resource('posts','PostsController');
 Route::get('/blog','PostsController@index');
 Route::get('/posts/create','PostsController@create');
 Route::get('/posts/{id}/edit','PostsController@edit');
-Route::get('/posts/{id}/destroy','PostsController@destroy');
+Route::delete('/posts/{id}/destroy','PostsController@destroy');
 
 Auth::routes();
 
