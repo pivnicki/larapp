@@ -1,12 +1,17 @@
  @extends('layouts.app')
  @section('content')
  <div class="row">
- 	<div class="col-sm-6">
+ 	<div class="col-sm-4">
+ 		<div class="thumbnail">
+ 		<img style="width:50%" src="/storage/cover_images/{{$post->cover_image}}"/>
+ 	</div>
+ 	</div>
+ 	<div class="col-sm-6">	
  		<a href="/posts" class="btn btn-success">Go Back</a>
  <a href="/posts/{{$post->id}}/edit" class="btn btn-success">Edit</a>
  	</div>
  	<div class="col-sm-6">
- 		 {!!Form::open(['action'=>['PostsController@destroy',$post->id],'method'=>'POST','class'=>'pull-right'])!!}
+ 	{!!Form::open(['action'=>['PostsController@destroy',$post->id],'method'=>'POST','class'=>'pull-right'])!!}
 	{{Form::hidden('_method','DELETE')}}
 	{{Form::submit('Delete',['class'=>'btn btn-danger'])}}
 {!!Form::close()!!}

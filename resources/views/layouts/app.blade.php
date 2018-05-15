@@ -19,6 +19,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
     <div id="app">
       @include('layouts/navbar')
       @include('inc.messages')
@@ -35,5 +36,6 @@
     <script>
         CKEDITOR.replace( 'article-ckeditor' );
     </script>
+    </div>
 </body>
 </html>
